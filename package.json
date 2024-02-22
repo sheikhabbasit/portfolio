@@ -2,6 +2,7 @@
   "name": "react-starter",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sheikhabbasit.github.io/portfolio",
   "dependencies": {
     "@hookform/resolvers": "^2.9.10",
     "@react-spring/parallax": "^9.6.1",
@@ -21,6 +22,8 @@
     "yup": "^0.32.11"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -45,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "sass": "^1.71.1"
   }
 }
