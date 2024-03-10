@@ -10,11 +10,13 @@ import {
   FaInstagram,
   FaLinkedin,
   FaMailBulk,
+  FaGithub,
 } from "react-icons/fa";
+
 import { SiTailwindcss } from "react-icons/si";
 import { DiJavascript } from "react-icons/di";
 import { TbBrandNextjs } from "react-icons/tb";
-
+import { SiMui } from "react-icons/si";
 import { BsMedium } from "react-icons/bs";
 import TerraPraxis from "./assets/TerraPraxis.jpg";
 import Portfolio from "./assets/Portfolio.jpg";
@@ -54,12 +56,14 @@ export const bios = [
 ];
 
 export const icons = [
-  <FaHtml5 />,
-  <FaCss3 />,
-  <DiJavascript />,
-  <FaReact />,
-  <SiTailwindcss />,
-  <TbBrandNextjs />,
+  { icon: <FaHtml5 />, name: "HTML" },
+  { icon: <FaCss3 />, name: "CSS" },
+  { icon: <DiJavascript />, name: "JavaScript" },
+  { icon: <FaReact />, name: "React" },
+  { icon: <SiTailwindcss />, name: "TailwindCSS" },
+  { icon: <TbBrandNextjs />, name: "NextJS" },
+  { icon: <SiMui />, name: "MUI" },
+  { icon: <FaGithub />, name: "Github" },
 ];
 
 export const experiences = [

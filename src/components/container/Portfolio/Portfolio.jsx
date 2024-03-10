@@ -3,6 +3,9 @@ import "./Portfolio.scss";
 import { workImages } from "../../../Data";
 import { FiEye } from "react-icons/fi";
 import { motion } from "framer-motion";
+import { Carousel } from "react-responsive-carousel";
+import Currinda from "../../../assets/Currinda.jpg";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Portfolio = () => {
   // const [tab, setTab] = useState({ name: "all" });
@@ -28,11 +31,11 @@ const Portfolio = () => {
         <span>My Work</span>
         <h1>Projects</h1>
       </motion.div>
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ y: [-50, 0], opacity: 1 }}
         className="buttons"
-      ></motion.div>
+      ></motion.div> */}
       <motion.div
         initial={{ x: 0, opacity: 0 }}
         whileInView={{ x: [-250, 0], opacity: 1 }}
@@ -40,34 +43,33 @@ const Portfolio = () => {
         exit={{ opacity: 0, y: -50 }}
         className="workImages"
       >
-        {works.map((work) => {
-          return (
-            <div className="workImage" key={work.id}>
-              <img src={work.img} alt="workImg" />
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileHover={{ opacity: [0, 1] }}
-                transition={{ duration: 0.3, ease: "easeInOut" }}
-                className="hoverLayer"
-              >
-                <h1 className="projectName">{work.name}</h1>
-
-                <motion.a
-                  href={work.link}
-                  whileInView={{ scale: [0, 1] }}
-                  whileHover={{ scale: [1, 1.1] }}
-                  transition={{ duration: 0.3 }}
+        <Carousel className="workImages" showArrows={true}>
+          {works.map((work) => {
+            return (
+              <div className="workImage" key={work.id}>
+                <img className="img" src={work.img} alt="workImg" />
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileHover={{ opacity: [0, 1] }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
+                  className="hoverLayer"
                 >
-                  <FiEye />
-                </motion.a>
-              </motion.div>
-            </div>
-          );
-        })}
+                  <h1 className="projectName">{work.name}</h1>
+
+                  <motion.a
+                    href={work.link}
+                    whileInView={{ scale: [0, 1] }}
+                    whileHover={{ scale: [1, 1.1] }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <FiEye />
+                  </motion.a>
+                </motion.div>
+              </div>
+            );
+          })}
+        </Carousel>
       </motion.div>
-      <h1 style={{ color: "white", textAlign: "center", paddingTop: "30px" }}>
-        Currently working on GetUnitronic
-      </h1>
     </div>
   );
 };

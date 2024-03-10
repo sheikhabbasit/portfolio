@@ -62,16 +62,13 @@ const App = () => {
           <ParallaxLayer offset={1} speed={length <= 600 ? 0.5 : 0.2}>
             <About />
           </ParallaxLayer>
-          <ParallaxLayer
-            offset={length <= 600 ? 2 : 2}
-            speed={length <= 600 ? 1.9 : 2}
-          >
+          <ParallaxLayer offset={2} speed={length <= 600 ? 1.9 : 2}>
             <Skills />
           </ParallaxLayer>
           <ParallaxLayer speed={0.2} offset={3}>
             <Portfolio />
           </ParallaxLayer>
-          <ParallaxLayer speed={0.3} offset={length <= 600 ? 4 : 4}>
+          <ParallaxLayer speed={0.3} offset={4}>
             <div style={{ marginLeft: "30px" }}>
               <h1 style={{ color: "white" }}>Thanks for visiting!</h1>
               <Footer />
@@ -82,37 +79,6 @@ const App = () => {
       </div>
     </>
   );
-  // return (
-  //   <Parallax pages={5} ref={parallax}>
-  //     <ParallaxLayer offset={0} speed={0.9}>
-  //       <Navbar />
-  //       <Home />
-  //     </ParallaxLayer>
-  //     <ParallaxLayer offset={0.9} speed={length <= 500 ? 0.5 : 0.3}>
-  //     <About />
-  //     </ParallaxLayer>
-  //     <ParallaxLayer offset={ length <= 500 ? 1.1 : 1.2} speed={ length <= 500 ? 1 : 1.5}>
-  //     <Skills />
-  //     </ParallaxLayer>
-  //     <ParallaxLayer speed={-0.2} offset={2.2}>
-  //     <Portfolio />
-  //     </ParallaxLayer>
-  //     <ParallaxLayer style={{zIndex:-100}} speed={-0.3} offset={3.3}>
-  //     <Contact />
-  //     </ParallaxLayer>
-  //     <ParallaxLayer speed={0} offset={4.5}>
-  //     </ParallaxLayer>
-  //   </Parallax>
-  //   // <div>
-  //   //   <Navbar />
-  //   //   <Home />
-  //   //   <About />
-  //   //   <Skills />
-  //   //   <Portfolio />
-  //   //   <Contact />
-  //   //   <Footer />
-  //   // </div>
-  // );
 };
 
 export default App;
