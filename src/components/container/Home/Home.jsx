@@ -36,8 +36,10 @@ const Home = () => {
         <span className="text">
           Crafting Digital Experiences <br /> With{" "}
           <span className="orange">Precision, </span>
-          <span className="green">Passion</span> and{" "}
-          <span className="blue">Speed</span>
+          <span className="green">Passion,</span>
+          <br />
+          and
+          <span className="blue"> Speed</span>
         </span>
         <motion.a
           href="mailto:sheikh.abdul.basit95@gmail.com"

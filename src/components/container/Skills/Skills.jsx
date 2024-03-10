@@ -43,7 +43,10 @@ const Skills = () => {
           icons.map((icon, index) => {
             return (
               <div key={index} className="tools">
-                {icon}
+                <div className="tool-controller">
+                  <div>{icon.icon}</div>
+                  <p>{icon.name}</p>
+                </div>
               </div>
             );
           })}
