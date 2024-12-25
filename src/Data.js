@@ -24,6 +24,7 @@ import Currinda from "./assets/Currinda.jpg";
 import DMVentures from "./assets/DMVentures.jpg";
 import CuriousTitans from "./assets/CuriousTitans.jpg";
 import GetUnitronic from "./assets/GetUnitronic.jpg";
+import CEEW from "./assets/CEEW.png";
 
 export const navLinks = ["home", "about", "skills", "portfolio"];
 
@@ -83,13 +84,13 @@ export const experiences = [
 export const finishes = [
   {
     id: 1,
-    number: "2+ ",
+    number: "3+ ",
     itemName: "Years Of Experience",
   },
   {
     id: 2,
-    number: " 5",
-    itemName: "Projects Done",
+    number: " 6 ",
+    itemName: " Projects Delivered",
   },
 ];
 
@@ -126,7 +127,13 @@ export const workImages = [
     link: "https://admin-dev.getunitronic.com/",
   },
   {
-    id: 6,
+    id: 5,
+    img: CEEW,
+    name: "CEEW - Waste Management",
+    link: "https://stage.ceew.wastemanagement.foxlabs.in/",
+  },
+  {
+    id: 7,
     img: Portfolio,
     name: "Personal Portfolio",
     link: "",
