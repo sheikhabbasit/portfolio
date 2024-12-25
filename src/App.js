@@ -69,7 +69,7 @@ const App = () => {
             <Portfolio />
           </ParallaxLayer>
           <ParallaxLayer speed={0.3} offset={4}>
-            <div style={{ marginLeft: "30px" }}>
+            <div style={{ marginLeft: "10vw" }}>
               <h1 style={{ color: "white" }}>Thanks for visiting!</h1>
               <Footer />
             </div>
