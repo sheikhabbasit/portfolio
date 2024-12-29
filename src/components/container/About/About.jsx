@@ -57,7 +57,7 @@ const About = () => {
             })}
           </div>
           <motion.a
-            href="https://drive.google.com/file/d/1gvNnFzqTs-bpKovEmZOEHAUE53W5Rp5g/view?usp=sharing"
+            href="https://drive.google.com/file/d/18u4FV3ID-CEBkfrrwttrVSFmrG4RVeL8/view?usp=drive_link"
             download=""
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
