@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.2bd8edf1.css",
-    "main.js": "/portfolio/static/js/main.04daec97.js",
+    "main.js": "/portfolio/static/js/main.c3da855c.js",
     "static/media/CEEW.png": "/portfolio/static/media/CEEW.e8573d44bfb63785dbd4.png",
     "static/media/TerraPraxis.jpg": "/portfolio/static/media/TerraPraxis.59062776e19b1c1af0ed.jpg",
     "static/media/Currinda.jpg": "/portfolio/static/media/Currinda.838915be020d550b0914.jpg",
@@ -12,10 +12,10 @@
     "static/media/Portfolio.jpg": "/portfolio/static/media/Portfolio.ddd0ef36b732783f5bc6.jpg",
     "index.html": "/portfolio/index.html",
     "main.2bd8edf1.css.map": "/portfolio/static/css/main.2bd8edf1.css.map",
-    "main.04daec97.js.map": "/portfolio/static/js/main.04daec97.js.map"
+    "main.c3da855c.js.map": "/portfolio/static/js/main.c3da855c.js.map"
   },
   "entrypoints": [
     "static/css/main.2bd8edf1.css",
-    "static/js/main.04daec97.js"
+    "static/js/main.c3da855c.js"
   ]
 }
